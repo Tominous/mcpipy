@@ -8,7 +8,7 @@ import time
     @author: goldfish"""
 
 def pickBlock( iterations, maxIt ):
-    #blockChoice = int( 10 * iterations / maxIt )
+    blockChoice = int( 10 * iterations / maxIt )
     blockChoice = iterations
     if blockChoice == 0:
         return( block.STONE )
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     mc = minecraft.Minecraft.create( server.address )
     mc.postToChat("Drawing Mandelbrot set")
     time.sleep(1)
-    #drawMandelbrot( -128, -1, -128, 256, 256, 14, -1.6, 0.0, -1.0, 0.3 )
-    # drawMandelbrot( -40, -1, -40, 80, 80, 100, -1.6, 0.0, -1.0, 0.3 )
+    drawMandelbrot( -128, -1, -128, 256, 256, 14, -1.6, 0.0, -1.0, 0.3 )
+     drawMandelbrot( -40, -1, -40, 80, 80, 100, -1.6, 0.0, -1.0, 0.3 )
     drawMandelbrot( -30, -1, -30, 60, 60, 254, -2.0, -1.5, 1.0, 1.5 )
-    # drawMandelbrot( -128, -1, -128, 256, 256, 255, -2.0, -1.5, 1.0, 1.5 )
+     drawMandelbrot( -128, -1, -128, 256, 256, 255, -2.0, -1.5, 1.0, 1.5 )
